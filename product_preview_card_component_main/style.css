@@ -13,10 +13,6 @@
   --veryDarkBlue: hsl(212, 21%, 14%);
   --darkGrayishBlue: hsl(228, 12%, 48%);
   --white: hsl(0, 0%, 100%);
-
-  /* text */
-  --largeText: 3rem;
-  --regularText: 1.6rem;
 }
 
 html {
@@ -145,7 +141,7 @@ a:hover {
   color: var(--veryDarkBlue);
 }
 
-@media screen and (max-width: 401px) {
+@media screen and (max-width: 501px) {
   body {
     display: flex;
     flex-direction: column;
@@ -161,6 +157,7 @@ a:hover {
     flex-direction: column;
     background-color: var(--white);
     max-width: 144rem;
+    min-width: 280px;
     border-radius: 1rem;
   }
 
@@ -250,5 +247,6 @@ a:hover {
     margin: 5rem 0;
     justify-content: center;
     align-items: center;
+    text-align: center;
   }
 }
