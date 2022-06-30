@@ -3,15 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./images/favicon-32x32.png"
+      href="CSS/images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -28,35 +26,35 @@
     <title>Frontend Mentor | Product preview card component</title>
   </head>
   <body>
-    <section class="wrapper">
+    <main class="wrapper">
       <section class="imageMain">
         <picture class="pic">
           <source
-            srcset="
-              ../product_preview_card_component_main/product_preview_card_component_main/images/image-product-mobile.jpg
-            "
+            srcset="CSS/images/image-product-mobile.jpg"
             media="(max-width: 501px)"
           />
           <img
-            src="../product_preview_card_component_main/product_preview_card_component_main/images/image-product-desktop.jpg"
+            src="CSS/images/image-product-desktop.jpg"
             alt="Gabrielle Parfum"
           />
         </picture>
       </section>
       <section class="contentMain">
-        <h2>PERFUME</h2>
+        <h2 class="title">PERFUME</h2>
         <h1>Gabrielle Essence Eau De Parfum</h1>
-        <p>
+        <p class="description">
           A floral, solar and voluptuous interpretation composed by Olivier
           Polge, Perfumer-Creator for the House of CHANEL.
         </p>
-        <h3>$149.99 <span>$169.99</span></h3>
+        <section class="pricing">
+          <h3>$149.99<span class="wasPricing">$169.99</span></h3>
+        </section>
         <button>
           <i class="fa-solid fa-cart-shopping icon"></i>Add to Cart
         </button>
       </section>
-    </section>
-    <section class="attribution">
+    </main>
+    <footer class="attribution">
       <section>
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
@@ -66,6 +64,6 @@
       <section>
         Coded by <a href="https://github.com/CitrineDragon"> Citrine Dragon.</a>
       </section>
-    </section>
+    </footer>
   </body>
 </html>
