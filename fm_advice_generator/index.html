@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="CSS/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Advice generator app</title>
+  </head>
+  <body>
+    <main>
+      <h1>ADVICE #<span class="adviceNumber"></span></h1>
+
+      <p class="adviceText">&ldquo;<span class="adviceArea"></span>&rdquo;</p>
+      <picture class="svgDivider">
+        <source
+          srcset="CSS/images/pattern-divider-mobile.svg"
+          media="(max-width: 500px)"
+        />
+        <img src="CSS/images/pattern-divider-desktop.svg" alt="SVG Divider" />
+      </picture>
+    </main>
+    <button class="randomizer">
+      <img src="CSS/images/icon-dice.svg" alt="Dice" />
+    </button>
+    <footer class="attribution">
+      <section>
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor.</a
+        >
+      </section>
+      <section>
+        Coded by <a href="https://github.com/CitrineDragon"> Citrine Dragon.</a>
+      </section>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>

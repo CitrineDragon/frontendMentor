@@ -1,0 +1,130 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+### Body Copy
+
+- Font size (quote): 28px
+
+### Font
+
+- Family: [Manrope](https://fonts.google.com/specimen/Manrope)
+- Weights: 800 */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Primary */
+  --lightCyan: hsl(193, 38%, 86%);
+  --neonGreen: hsl(150, 100%, 66%);
+
+  /* Neutral */
+  --grayishBlue: hsl(217, 19%, 38%);
+  --darkGrayishBlue: hsl(217, 19%, 24%);
+  --darkBlue: hsl(218, 23%, 16%);
+}
+
+html {
+  display: flex;
+  background-color: var(--darkBlue);
+  font-size: 62.5%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 800;
+  padding: 4%;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--darkGrayishBlue);
+  max-width: 60rem;
+  border-radius: 1rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+h1 {
+  color: var(--neonGreen);
+  font-size: 1.4rem;
+  letter-spacing: 0.4rem;
+  margin: 5rem 0 3rem 0;
+}
+
+.adviceText {
+  color: white;
+  font-size: 2.8rem;
+  max-width: 80%;
+}
+
+.svgDivider {
+  margin: 4rem 0 8rem 0;
+}
+
+.svgDivider img {
+  max-width: 90%;
+}
+
+.randomizer {
+  display: flex;
+  background-color: var(--neonGreen);
+  height: 6.5rem;
+  width: 6.5rem;
+  border: none;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.randomizer img {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+button:hover {
+  box-shadow: /* White glow */ 0 0 7px #0fa, 0 0 10px #0fa, 0 0 21px #0fa;
+}
+
+footer section {
+  padding: 1rem 0 0 0;
+}
+
+.attribution {
+  color: white;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: var(--neonGreen);
+}
+
+.attribution a:hover {
+  text-shadow: 0 0 7px #0fa, 0 0 10px #0fa, 0 0 21px #0fa;
+}
+
+@media screen and (max-width: 501px) {
+  main {
+    max-width: 37.5rem;
+  }
+}
